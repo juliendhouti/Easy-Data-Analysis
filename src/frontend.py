@@ -94,8 +94,8 @@ class Application(tk.Frame):
         
     def show_scatter_plot(self, data_analysis_object):
         """Create OptionMenus for x and y axis and set up display_scatter() to be called if both OptionMenus have columns selected"""
-         """todo: check to make sure the columns are both numerical in type, fix spacing of the x and y axis OptionMenus. 
-         Try filtering columns only by numerical value? """
+        """todo: check to make sure the columns are both numerical in type, fix spacing of the x and y axis OptionMenus. 
+        Try filtering columns only by numerical value? """
         print("Scatter plot will be shown")
 
         # self.x_axis_label = Label(self, text = "X Axis")
