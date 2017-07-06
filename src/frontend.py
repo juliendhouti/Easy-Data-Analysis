@@ -45,6 +45,12 @@ class Application(tk.Frame):
     def addAnalysis(self):
         """Places visualizations onto the screen after file is chosen"""
         self.analyze = da.Data_Analysis(self.filepath)
+        OPTIONS = ['Placeholder1', 'Placeholder2', 'Placeholder3']
+        var = StringVar(self.master)
+        var.set(OPTIONS[0])
+        analysis_type = OptionMenu(self.master, var, *OPTIONS)
+        analysis_type.grid(row = 0, column = 1)
+
         # histogram
         image = self.analyze.get_scatter_plot('Duration', 'Age')
         photo = ImageTk.PhotoImage(image)
