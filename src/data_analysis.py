@@ -2,7 +2,7 @@
 # Author: Julien Dhouti
 # Data_Analysis : class - contains all of the attribute that the front end needs
 #                       - includes graph + information generation
-# Python 3.6.1
+# Python 3.6.1 added thsi for a test
 
 import pandas as pd
 import numpy as np
